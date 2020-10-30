@@ -6,6 +6,7 @@ int main( int arg, char *argv[])
 	int height = 72;
 	int ch;
 
+
 	printf("I am %d years old. \n",age);
 	printf("I am %d inches tall. \n",height);
 

@@ -1,10 +1,16 @@
 
 # CFLAGS=-Wall -g
 all:
-	cc -Wall -g ex1.c -o ex1
-	cc -Wall -g ex3.c -o ex3
+	mkdir compiled
+	cc -Wall -g ex1.c -o compiled/ex1
+	cc -Wall -g ex3.c -o compiled/ex3
+	cc -Wall -g ex7.c -o compiled/ex7
 
 clean:
-	rm -f ex1
-	rm -f ex3
+	rm -rf compiled
+	rm -rf debug
+
+debug:
+	mkdir debug
+	cc -Wall -g ex7.c 
 
