@@ -9,6 +9,7 @@ int main(int argc, char* argv[])
     char first_name[] = "ZED";
     char last_name[] = "Shaw";
 
+    printf("%d \n",argc);
     printf("you are %d mile away. \n",distance);
     printf("you have %f levels of power.\n",power);
     printf("you have %f awesome super powers.\n",super_power);
