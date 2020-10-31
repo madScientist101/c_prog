@@ -17,7 +17,15 @@ int main(int argc, char *argv[]){
         i++;
     }
 
-
+    const char *name = "mike";
+    for(int i=0; i<sizeof(int);i++){
+        printf("Name: %c\n",name[i]);
+        printf(" %lu\n",sizeof(char));
+        printf(" %lu\n",sizeof(char*));
+        printf(" %lu\n",sizeof(int));
+        printf(" %lu\n",sizeof(double));
+        printf(" %lu\n",sizeof(float));
+    }
     
     return 0;
 }
