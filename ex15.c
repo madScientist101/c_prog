@@ -8,4 +8,6 @@ int main(int argc, char *argv[]){
         printf("%p  ==> %d \n",p+i,*(p+i));
     }
     return 0;
+
+    
 }
