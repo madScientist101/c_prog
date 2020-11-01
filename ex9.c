@@ -11,6 +11,15 @@ int main(int argc, char *argv[]){
     // printf("%ld\n",sizeof states[0]);
     // printf("%ld\n",sizeof states / sizeof states[0]);
     
+    // pointer convertion
+    char **state = states;
+    for (i=0;i<arr_s;i++){
+        printf("State Pointer Imp ==>: %s\t",*(state+i));
+        printf("Current state address ==>: %p\n",&state+i);
+    }
+
+    printf("----------\n");
+
     while (i < arr_s)
     {
         printf("state %d: %s\n", i, states[i]);
