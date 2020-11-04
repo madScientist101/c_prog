@@ -54,7 +54,7 @@ int main(int argc, char *argv[]){
     Person_print(frank);
 
 
-    Person_destroy(joe);
+    Person_destroy(joe); //run time
     Person_destroy(frank);
 
     return 0;

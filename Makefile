@@ -8,6 +8,7 @@ all:
 	cc -Wall -g ex8.c -o compiled/ex8
 	cc -Wall -g ex9.c -o compiled/ex9
 	cc -Wall -g ex14.c -o compiled/ex14
+	cc -Wall -g ex16.c -o compiled/ex16
 
 clean:
 	rm -rf compiled
