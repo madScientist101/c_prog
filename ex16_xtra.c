@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <string.h>
+// #include <stdlib.h>
+// #include <assert.h>
+// #include <string.h>
 
 
 struct Person {
@@ -13,7 +13,7 @@ struct Person {
 
 struct Person create_person(char *name,int age,int height,int weight){
     struct Person who;
-    who.name = strdup(name);
+    who.name = name;
     who.age = age;
     who.height = height;
     who.weight = weight;
@@ -27,19 +27,21 @@ void print_person(struct Person who){
     printf("\tHeight: %d\n", who.height);
     printf("\tWeight: %d\n", who.weight);
 }
-void destroy_person(struct Person who){
-    free(who.name);
-}
+// void destroy_person(struct Person who){
+//     free(who.name);
+// }
 
 int main(int argc, char *argv[]){
     struct Person joe = create_person("joe Alex",22,67,190);
     struct Person frank = create_person("Frank Blank",32,73,210);
 
+    printf("Jeo is in Address %p\n",&(joe));
+    printf("Frank is in Address %p\n",&(frank));
     print_person(joe);
     print_person(frank);
 
-    destroy_person(joe);
-    destroy_person(frank);
+    // destroy_person(joe);
+    // destroy_person(frank);
 
     return 0;
 }
