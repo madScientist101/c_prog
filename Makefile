@@ -10,6 +10,9 @@ all:
 	cc -Wall -g ex14.c -o compiled/ex14
 	cc -Wall -g ex16.c -o compiled/ex16
 
+	cc -Wall -g -DNDEBUG -c -o ex22/ex22.o ex22/ex22.c
+	cc -Wall -g -DNDEBUG ex22/ex22_main.c ex22/ex22.o -o compiled/ex22_main
+
 clean:
 	rm -rf compiled
 	rm -rf debug
